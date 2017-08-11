@@ -5,4 +5,9 @@ public class CardMage extends Card{
 		super(n,m,a,l);
 		super.faction=Faction.MAGES;	
 	}
+	
+	
+	public CardMage(){
+		super();
+	}
 }

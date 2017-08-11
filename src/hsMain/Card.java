@@ -8,7 +8,7 @@ public abstract class Card {
 	private int attackPts;
 	private int lifePts;
 	private int curHPts;
-	private String name;
+	protected String name;
 	protected Faction faction;
 	protected CardType type;
 	
@@ -19,6 +19,13 @@ public abstract class Card {
 		this.attackPts=a;
 		this.lifePts=l;
 		this.curHPts=l;
+	}
+	
+	public Card(){
+		this.manaPts=0;
+		this.attackPts=0;
+		this.lifePts=0;
+		this.curHPts=0;
 	}
 	
 	
