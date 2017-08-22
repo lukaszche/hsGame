@@ -6,8 +6,26 @@ public abstract class Card {
 
 	private int manaPts;
 	private int attackPts;
+	private int curAttackPts;
 	private int lifePts;
 	private int curHPts;
+	public int getCurAttackPts() {
+		return curAttackPts;
+	}
+
+	public void setCurAttackPts(int curAttackPts) {
+		this.curAttackPts = curAttackPts;
+	}
+
+	public int getCurHPts() {
+		return curHPts;
+	}
+
+	public void setCurHPts(int curHPts) {
+		this.curHPts = curHPts;
+	}
+
+
 	protected String name;
 	protected Faction faction;
 	protected CardType type;
@@ -17,6 +35,7 @@ public abstract class Card {
 		this.name=n;
 		this.manaPts=m;
 		this.attackPts=a;
+		this.curAttackPts=a;
 		this.lifePts=l;
 		this.curHPts=l;
 	}
@@ -24,6 +43,7 @@ public abstract class Card {
 	public Card(){
 		this.manaPts=0;
 		this.attackPts=0;
+		this.curAttackPts=0;
 		this.lifePts=0;
 		this.curHPts=0;
 	}
